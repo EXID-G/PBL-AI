@@ -147,7 +147,7 @@ class ClusterManager:
                 data = pickle.load(file)
             chunk_size = len(data) // parallel_num
             data_chunks_tuple = [(i * chunk_size , (i + 1) * chunk_size) for i in range(parallel_num)]
-            # print(data_chunks_tuple)
+            print(data_chunks_tuple)
             if(container_idorname_list):
                 container_list = [self.client.containers.get(container_idorname) for container_idorname in container_idorname_list]
             else:
@@ -168,8 +168,7 @@ class ClusterManager:
     def _process_data_in_container(self, container, chunk_index, volume_data_path, process_file_path):
         try:
             container_id = container.id
-            # print(chunk_index)
-            # print(chunk_index[0])
+            print()
             # 在容器中执行处理数据的命令
             self._execute_command_in_container(container_id, f"python {process_file_path} {volume_data_path} {chunk_index[0]} {chunk_index[1]}")
 

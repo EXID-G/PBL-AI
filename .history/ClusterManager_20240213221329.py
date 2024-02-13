@@ -1,5 +1,4 @@
 import argparse
-import pickle
 import docker
 import logging
 import json
@@ -17,11 +16,11 @@ class ClusterManager:
         print(f"Cluster Manager {self.cluster_name} initialized successfully.")
 
 ##########* create
-    def create_containers(self, num_containers=8, name_list=None, volumes=None):
+    def create_containers(self, num_containers=8, name_list=None,data_volume_path=None):
         try:
             for i in range(num_containers):
                 hostname = f"{self.cluster_name}-container{i+1}"
-                container = self._create_container(hostname = hostname,name = name_list[i] if name_list else None, volumes = volumes)
+                container = self._create_container(hostname = hostname,name = name_list[i] if name_list else None, data_volume_path = data_volume_path)
                 self.containers.append({"id": container.id, "name": container.name,"hostname": hostname})
                 container.start()
 
@@ -32,11 +31,11 @@ class ClusterManager:
         except docker.errors.APIError as e:
             print(f"Error creating cluster: {e}")
 
-    def _create_container(self, hostname,name=None,volumes=None):
+    def _create_container(self, hostname,name=None,data_volume_path=None):
         # 将共享数据卷挂载到容器内的指定路径
+        volumes = {data_volume_path: {'bind': data_volume_path, 'mode': 'rw'}}
 
-
-        container = self.client.containers.run('tensorflow/tensorflow', command='sh',detach=True,stdin_open=True,tty=True, hostname=hostname, name=name, volumes = volumes)
+        container = self.client.containers.run('tensorflow/tensorflow', command='sh',detach=True,stdin_open=True,tty=True, hostname=hostname, name=name,volumes = volumes)
         return container
 
 ##########* list
@@ -97,7 +96,7 @@ class ClusterManager:
 
         # 确保容器现在处于运行状态后执行命令
         exec_id = container.exec_run(command)
-        print(f"Command output for Container {container_id}:\n{exec_id.output.decode()}")
+        print(f"Command output for Container {container_id}:\n {exec_id.output.decode()}")
 
 
 ##########* stop
@@ -138,40 +137,41 @@ class ClusterManager:
         print(f"Container {container_id} deleted successfully.")
 
 ####### processing data parallel
-    def distribute_and_process_data_parallel(self,parallel_num, volume_data_path, process_file_path,container_idorname_list=None):
+    def distribute_and_process_data_parallel(self,parallel_num, data_path container_idorname_list=None):
         try:
             if (parallel_num > len(self.containers)):
                 print(f"Error: parallel_num {parallel_num} is greater than the number of containers {len(self.containers)}")
                 return
-            with open(volume_data_path, 'rb') as file:
-                data = pickle.load(file)
+            data = pickle.load()
             chunk_size = len(data) // parallel_num
-            data_chunks_tuple = [(i * chunk_size , (i + 1) * chunk_size) for i in range(parallel_num)]
-            # print(data_chunks_tuple)
+            data_chunks = [data[i * chunk_size: (i + 1) * chunk_size] for i in range(parallel_num)]
+
             if(container_idorname_list):
                 container_list = [self.client.containers.get(container_idorname) for container_idorname in container_idorname_list]
             else:
-                container_list = [self.client.containers.get(container_idorname["id"]) for container_idorname in self.containers[:parallel_num]]
+                container_list = self.containers[:parallel_num]
 
             # 使用 ThreadPoolExecutor 进行并行执行
             with concurrent.futures.ThreadPoolExecutor() as executor:
                 # 将每个容器的任务提交到执行器
-                futures = [executor.submit(self._process_data_in_container, container, chunk_index, volume_data_path, process_file_path)
-                           for container, chunk_index in zip(container_list, data_chunks_tuple)]
+                futures = [executor.submit(self._process_data_in_container, container, chunk)
+                           for container, chunk in zip(self.containers, data_chunks)]
 
                 # 等待所有任务完成
                 concurrent.futures.wait(futures)
 
         except docker.errors.APIError as e:
-            print(f"Error distributing and processing data parallel: {e}")
+            print(f"Error distribute and process data parallel: {e}")
 
-    def _process_data_in_container(self, container, chunk_index, volume_data_path, process_file_path):
+    def _process_data_in_container(self, container, data_chunk):
         try:
-            container_id = container.id
-            # print(chunk_index)
-            # print(chunk_index[0])
+            container_id = container["id"]
+
+            # 将数据块写入共享的数据卷
+            self._write_data_to_volume(container_id, data_chunk)
+
             # 在容器中执行处理数据的命令
-            self._execute_command_in_container(container_id, f"python {process_file_path} {volume_data_path} {chunk_index[0]} {chunk_index[1]}")
+            self._execute_command_in_container(container_id, "python process_data.py")
 
         except docker.errors.APIError as e:
-            print(f"Error processing data in container {container_id}: {e}")
+            print(f"在容器 {container_id} 中处理数据时出错: {e}")

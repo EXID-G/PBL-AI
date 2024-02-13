@@ -138,7 +138,7 @@ class ClusterManager:
         print(f"Container {container_id} deleted successfully.")
 
 ####### processing data parallel
-    def distribute_and_process_data_parallel(self,parallel_num, volume_data_path, process_file_path,container_idorname_list=None):
+    def distribute_and_process_data_parallel(self,parallel_num, volume_data_path, process_file,container_idorname_list=None):
         try:
             if (parallel_num > len(self.containers)):
                 print(f"Error: parallel_num {parallel_num} is greater than the number of containers {len(self.containers)}")
@@ -147,7 +147,7 @@ class ClusterManager:
                 data = pickle.load(file)
             chunk_size = len(data) // parallel_num
             data_chunks_tuple = [(i * chunk_size , (i + 1) * chunk_size) for i in range(parallel_num)]
-            # print(data_chunks_tuple)
+
             if(container_idorname_list):
                 container_list = [self.client.containers.get(container_idorname) for container_idorname in container_idorname_list]
             else:
@@ -156,22 +156,21 @@ class ClusterManager:
             # 使用 ThreadPoolExecutor 进行并行执行
             with concurrent.futures.ThreadPoolExecutor() as executor:
                 # 将每个容器的任务提交到执行器
-                futures = [executor.submit(self._process_data_in_container, container, chunk_index, volume_data_path, process_file_path)
+                futures = [executor.submit(self._process_data_in_container, container, chunk_index, process)
                            for container, chunk_index in zip(container_list, data_chunks_tuple)]
 
                 # 等待所有任务完成
                 concurrent.futures.wait(futures)
 
         except docker.errors.APIError as e:
-            print(f"Error distributing and processing data parallel: {e}")
+            print(f"Error distribute and process data parallel: {e}")
 
-    def _process_data_in_container(self, container, chunk_index, volume_data_path, process_file_path):
+    def _process_data_in_container(self, container, chunk_index, process):
         try:
             container_id = container.id
-            # print(chunk_index)
-            # print(chunk_index[0])
+
             # 在容器中执行处理数据的命令
-            self._execute_command_in_container(container_id, f"python {process_file_path} {volume_data_path} {chunk_index[0]} {chunk_index[1]}")
+            self._execute_command_in_container(container_id, "python ass2_volume/ass2_process_data.py chunk_index")
 
         except docker.errors.APIError as e:
-            print(f"Error processing data in container {container_id}: {e}")
+            print(f"在容器 {container_id} 中处理数据时出错: {e}")

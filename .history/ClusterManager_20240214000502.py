@@ -147,7 +147,7 @@ class ClusterManager:
                 data = pickle.load(file)
             chunk_size = len(data) // parallel_num
             data_chunks_tuple = [(i * chunk_size , (i + 1) * chunk_size) for i in range(parallel_num)]
-            # print(data_chunks_tuple)
+            print(data_chunks_tuple)
             if(container_idorname_list):
                 container_list = [self.client.containers.get(container_idorname) for container_idorname in container_idorname_list]
             else:
