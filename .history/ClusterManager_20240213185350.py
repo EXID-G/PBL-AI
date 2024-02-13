@@ -206,7 +206,7 @@ if __name__ == "__main__":
                     elif choice3 == '2':
                         container_idorname = input("Enter the name/id of the container completely: ")
                         while(True):
-                            command = input(f"Enter the command to run in the container {container_idorname} (input \"q\" can quit): ")
+                            command = input("Enter the command to run in the cluster (input \"q\" can quit): ")
                             if command == "q":
                                 break
                             cluster_manager._execute_command_in_container(container_idorname, command)

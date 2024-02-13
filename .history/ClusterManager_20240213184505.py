@@ -197,20 +197,14 @@ if __name__ == "__main__":
                 while(True):
                     choice3 = input("1. Run the same command in all containers\n2. Run command in one designated container\nEnter your choice (1-2): ")
                     if choice3 == '1':
-                        while(True):
-                            command = input("Enter the command to run in the cluster (input \"q\" can quit): ")
-                            if command == "q":
-                                break
-                            cluster_manager.run_command_in_cluster(command)
+                        command = input("Enter the command to run in the cluster: ")
+                        cluster_manager.run_command_in_cluster(command)
                         break
                     elif choice3 == '2':
                         container_idorname = input("Enter the name/id of the container completely: ")
-                        while(True):
-                            command = input(f"Enter the command to run in the container {container_idorname} (input \"q\" can quit): ")
-                            if command == "q":
-                                break
-                            cluster_manager._execute_command_in_container(container_idorname, command)
-                        break
+                        command = input("Enter the command to run in the cluster: ")
+                        cluster_manager._execute_command_in_container(container_idorname, command)
+                        continue
                     else:
                         print("Invalid input")
                         continue
@@ -243,8 +237,7 @@ if __name__ == "__main__":
                         print("Invalid input")
                         continue
             elif choice == '6':
-                cluster_manager.list_running_containers()
-                choice6 = input("Before exiting, the cluster will stop and delete all running containers. Do you want to continue? (y/n): ")
+                choice6 = input("Before exiting, the cluster will stop and delete all containers. Do you want to continue? (y/n): ")
                 if choice6 == 'y':
                     cluster_manager.stop_all_containers()
                     cluster_manager.delete_all_containers()
