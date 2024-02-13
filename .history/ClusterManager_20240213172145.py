@@ -149,7 +149,7 @@ if __name__ == "__main__":
         print("5. Delete All Containers")
         print("6. Exit")
 
-        choice = input("Enter your choice (1-6): ")
+        choice = input("Enter your choice (1-7): ")
 
         try:
             if choice == '1':
@@ -199,13 +199,10 @@ if __name__ == "__main__":
             elif choice == '5':
                 cluster_manager.delete_all_containers()
             elif choice == '6':
-                choice6 = input("Before exiting, the cluster will delete all containers. Do you want to continue? (y/n): ")
-                if choice6 == 'y':
-                    cluster_manager.delete_all_containers()
-                    print("Exiting Cluster Manager. Goodbye!")
-                    break
-                else:
-                    continue
+                print("")
+                cluster_manager.delete_all_containers()
+                print("Exiting Cluster Manager. Goodbye!")
+                break
             else:
                 print("Invalid choice. Please enter a number between 1 and 6.")
         except KeyboardInterrupt:

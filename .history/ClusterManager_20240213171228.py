@@ -50,7 +50,7 @@ class ClusterManager:
     def list_running_containers(self):
         try:
             running_containers = self.client.containers.list(filters={'status': 'running'})
-            print(f"There are {len(running_containers)} running containers in the cluster.")
+            print(f"There are {len(self.containers)} running containers in the cluster.")
             for container in running_containers:
                 self._print_container_info(container.id)
         except docker.errors.APIError as e:
@@ -59,7 +59,7 @@ class ClusterManager:
     def list_stopped_containers(self):
         try:
             stopped_containers = self.client.containers.list(all=True, filters={'status': 'paused'})
-            print(f"There are {len(stopped_containers)} stopped containers in the cluster.")
+            print(f"There are {len(self.containers)} containers in the cluster.")
             for container in stopped_containers:
                 self._print_container_info(container.id)
         except docker.errors.APIError as e:
@@ -75,21 +75,8 @@ class ClusterManager:
 
     def _execute_command_in_container(self, container_id, command):
         container = self.client.containers.get(container_id)
-
-        # 检查容器状态，如果不是运行状态，则尝试启动容器
-        if container.status != "running":
-            print(f"Container {container_id} is not running. Trying to start it.")
-            try:
-                container.start()
-                print(f"Container {container_id} started successfully.")
-            except docker.errors.APIError as e:
-                print(f"Error starting container {container_id}: {e}")
-                return
-
-        # 确保容器现在处于运行状态后执行命令
         exec_id = container.exec_run(command)
         print(f"Command output for Container {container_id}: {exec_id.output.decode()}")
-
 
 ##########* stop
     def stop_cluster(self):
@@ -147,9 +134,10 @@ if __name__ == "__main__":
         print("3. Run Command in Cluster")
         print("4. Stop Containers")
         print("5. Delete All Containers")
-        print("6. Exit")
+        print("6. Clear the log file")
+        print("7. Exit")
 
-        choice = input("Enter your choice (1-6): ")
+        choice = input("Enter your choice (1-7): ")
 
         try:
             if choice == '1':
@@ -198,14 +186,10 @@ if __name__ == "__main__":
                 cluster_manager.stop_cluster()
             elif choice == '5':
                 cluster_manager.delete_all_containers()
-            elif choice == '6':
-                choice6 = input("Before exiting, the cluster will delete all containers. Do you want to continue? (y/n): ")
-                if choice6 == 'y':
-                    cluster_manager.delete_all_containers()
-                    print("Exiting Cluster Manager. Goodbye!")
-                    break
-                else:
-                    continue
+            elif choice == '7':
+                # cluster_manager.delete_all_containers()
+                print("Exiting Cluster Manager. Goodbye!")
+                break
             else:
                 print("Invalid choice. Please enter a number between 1 and 6.")
         except KeyboardInterrupt:
