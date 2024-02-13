@@ -133,7 +133,7 @@ class ClusterManager:
         container.remove()
         self.containers = [container for container in self.containers if container["id"] != container_id]
         print(f"Container {container_id} deleted successfully.")
-        log_data = {"event": "delete_container", "container_id": container_id}
+        log_data = {"event": "delete_container", "container_id": container['id']}
         logging.info(json.dumps(log_data))
 
 ####### processing data parallel

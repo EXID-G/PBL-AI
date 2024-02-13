@@ -120,7 +120,8 @@ class ClusterManager:
         try:
             for container in self.containers:
                 self._delete_container(container["id"])
-
+                log_data = {"event": "delete_container", "container_id": container['id']}
+                logging.info(json.dumps(log_data))
 
             print("All containers deleted successfully.")
         except docker.errors.APIError as e:
@@ -133,8 +134,6 @@ class ClusterManager:
         container.remove()
         self.containers = [container for container in self.containers if container["id"] != container_id]
         print(f"Container {container_id} deleted successfully.")
-        log_data = {"event": "delete_container", "container_id": container_id}
-        logging.info(json.dumps(log_data))
 
 ####### processing data parallel
     def distribute_and_process_data_parallel(self,parallel_num, volume_data_path, process_file_path,container_idorname_list=None):

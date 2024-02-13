@@ -31,8 +31,7 @@ class ClusterManager:
 
     def _create_container(self, hostname,name=None,volumes=None):
         container = self.client.containers.run('tensorflow/tensorflow', command='sh',detach=True,stdin_open=True,tty=True, hostname=hostname, name=name, volumes = volumes)
-        log_data = {"event": "create_container", "container_id": container.id, "hostname": hostname}
-        logging.info(json.dumps(log_data))
+        
         return container
 
 ##########* list
@@ -94,8 +93,6 @@ class ClusterManager:
         # 确保容器现在处于运行状态后执行命令
         exec_id = container.exec_run(command)
         print(f"Command output for Container {container_id}:\n{exec_id.output.decode()}")
-        log_data = {"event": "run_command_in_container", "container_id": container_id, "command": command}
-        logging.info(json.dumps(log_data))
 
 
 ##########* stop
@@ -103,6 +100,8 @@ class ClusterManager:
         try:
             for container in self.containers:
                 self._stop_container(container["id"])
+                log_data = {"event": "stop_container", "container_id": container['id']}
+                logging.info(json.dumps(log_data))
 
             print("Cluster stopped successfully.")
         except docker.errors.APIError as e:
@@ -112,15 +111,14 @@ class ClusterManager:
         container = self.client.containers.get(container_id)
         container.stop()
         print(f"Container {container_id} stopped successfully.")
-        log_data = {"event": "stop_container", "container_id": container_id}
-        logging.info(json.dumps(log_data))
 
 ##########* delete
     def delete_all_containers(self):
         try:
             for container in self.containers:
                 self._delete_container(container["id"])
-
+                log_data = {"event": "delete_container", "container_id": container['id']}
+                logging.info(json.dumps(log_data))
 
             print("All containers deleted successfully.")
         except docker.errors.APIError as e:
@@ -133,8 +131,6 @@ class ClusterManager:
         container.remove()
         self.containers = [container for container in self.containers if container["id"] != container_id]
         print(f"Container {container_id} deleted successfully.")
-        log_data = {"event": "delete_container", "container_id": container_id}
-        logging.info(json.dumps(log_data))
 
 ####### processing data parallel
     def distribute_and_process_data_parallel(self,parallel_num, volume_data_path, process_file_path,container_idorname_list=None):
