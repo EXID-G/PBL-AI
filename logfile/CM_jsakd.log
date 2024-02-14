@@ -1,0 +1,19 @@
+2024-02-14 16:14:21,997 - INFO - {"event": "init_cluster_manager", "cluster_name": "jsakd"}
+2024-02-14 16:14:25,304 - INFO - {"event": "create_container", "container_id": "ac470fa619a974c8070541532200928eda9a0a607ce850b72ec69308f9ace0cf", "hostname": "jsakd-container1"}
+2024-02-14 16:14:25,711 - INFO - {"event": "create_container", "container_id": "c83c4de096098d6d23eadc0c6dd091a1403c8ef7689d13bacd48bde861938c75", "hostname": "jsakd-container2"}
+2024-02-14 16:14:26,101 - INFO - {"event": "create_container", "container_id": "4e72e592f51bbf102456c03c55273c04ce56dbe8c6e782f12a5c28d632340857", "hostname": "jsakd-container3"}
+2024-02-14 16:14:41,585 - INFO - {"event": "stop_container", "container_id": "ac470fa619a974c8070541532200928eda9a0a607ce850b72ec69308f9ace0cf"}
+2024-02-14 16:14:51,904 - INFO - {"event": "stop_container", "container_id": "c83c4de096098d6d23eadc0c6dd091a1403c8ef7689d13bacd48bde861938c75"}
+2024-02-14 16:15:02,246 - INFO - {"event": "stop_container", "container_id": "4e72e592f51bbf102456c03c55273c04ce56dbe8c6e782f12a5c28d632340857"}
+2024-02-14 16:15:07,324 - INFO - {"event": "delete_container", "container_id": "ac470fa619a974c8070541532200928eda9a0a607ce850b72ec69308f9ace0cf"}
+2024-02-14 16:15:07,350 - INFO - {"event": "delete_container", "container_id": "c83c4de096098d6d23eadc0c6dd091a1403c8ef7689d13bacd48bde861938c75"}
+2024-02-14 16:15:07,377 - INFO - {"event": "delete_container", "container_id": "4e72e592f51bbf102456c03c55273c04ce56dbe8c6e782f12a5c28d632340857"}
+2024-02-14 16:15:14,826 - INFO - {"event": "create_container", "container_id": "86c74ee7d8def0c45f26373639df953eaa5f26b61e169411ea252b1217a7ec94", "hostname": "jsakd-container1"}
+2024-02-14 16:15:15,270 - INFO - {"event": "create_container", "container_id": "0d56d5eedf9e4fc9172633f9558ba174a9b97762ce3e2ba86e4ace999b5778cc", "hostname": "jsakd-container2"}
+2024-02-14 16:15:15,622 - INFO - {"event": "create_container", "container_id": "b80d9fe59961465966feff1a257b2edf95b50ea0731545c85c9aed7e4ab07de6", "hostname": "jsakd-container3"}
+2024-02-14 16:15:29,994 - INFO - {"event": "stop_container", "container_id": "86c74ee7d8def0c45f26373639df953eaa5f26b61e169411ea252b1217a7ec94"}
+2024-02-14 16:15:40,326 - INFO - {"event": "stop_container", "container_id": "0d56d5eedf9e4fc9172633f9558ba174a9b97762ce3e2ba86e4ace999b5778cc"}
+2024-02-14 16:15:50,657 - INFO - {"event": "stop_container", "container_id": "b80d9fe59961465966feff1a257b2edf95b50ea0731545c85c9aed7e4ab07de6"}
+2024-02-14 16:15:50,687 - INFO - {"event": "delete_container", "container_id": "86c74ee7d8def0c45f26373639df953eaa5f26b61e169411ea252b1217a7ec94"}
+2024-02-14 16:15:50,715 - INFO - {"event": "delete_container", "container_id": "0d56d5eedf9e4fc9172633f9558ba174a9b97762ce3e2ba86e4ace999b5778cc"}
+2024-02-14 16:15:50,739 - INFO - {"event": "delete_container", "container_id": "b80d9fe59961465966feff1a257b2edf95b50ea0731545c85c9aed7e4ab07de6"}

@@ -110,7 +110,7 @@ class ClusterManager:
 
         print(f"Command is being executed in container (id = {container_id}).")
 
-#######! exit_code is always None when 'stream = True', and online solutions are not that useful. Besides. some people said 'it cannot return stream and exit code at the same time' in https://github.com/docker/docker-py/issues/1381. So, I just give up to get the exit code.
+#######! exit_code is always None when 'stream = True', and online solutions is not that useful. Besides. some people said 'it cannot return stream and exit code at the same time' in https://github.com/docker/docker-py/issues/1381. So, I just give up to get the exit code.
         # exec_result = container.exec_run(command, stream = True)
         # output_lines = []
         # for line in exec_result.output:
