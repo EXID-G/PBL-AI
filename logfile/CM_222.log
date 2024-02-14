@@ -1,5 +1,0 @@
-{"event": "init_cluster_manager", "cluster_name": "222"}
-{"event": "stop_container", "container_id": "adc2b32a6f799ccf2e808d9682bb3e46b0a7cdba396298bb1c472239e07721fa"}
-{"event": "stop_container", "container_id": "cd132c9e033f3f2301237d2d6bae8ed2c24559f91fef7330b4abc3e78bc1f1e7"}
-{"event": "stop_container", "container_id": "19c9cc42cb201858e9a4875fcca7c97055453a3657f1c030440266e36890c9c5"}
-{"event": "stop_container", "container_id": "3e193384cc897ddc5ad97f6c18ad63e6ecc2f2f5295f4846ca6558eabe5e2fc5"}

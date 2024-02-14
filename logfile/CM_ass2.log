@@ -1,137 +1,34 @@
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "stop_container", "container_id": "8431e94309969bd2ab1b4d77c97a10e52281976b5774ed3cfcd949e58daaf628"}
-{"event": "stop_container", "container_id": "b87fc3f3ba15e31222d93dc79227557a22787d29b564675baf3d34a82fa794d1"}
-{"event": "stop_container", "container_id": "ab4b9c59a06350613292ff8092c25ea03ff6eb800b6ced9c289e536622aade26"}
-{"event": "stop_container", "container_id": "331684f241b63898a81eb3cd8537c17e0d5abf0066772d5a38fcedeb31463452"}
-{"event": "delete_container", "container_id": "8431e94309969bd2ab1b4d77c97a10e52281976b5774ed3cfcd949e58daaf628"}
-{"event": "delete_container", "container_id": "b87fc3f3ba15e31222d93dc79227557a22787d29b564675baf3d34a82fa794d1"}
-{"event": "delete_container", "container_id": "ab4b9c59a06350613292ff8092c25ea03ff6eb800b6ced9c289e536622aade26"}
-{"event": "delete_container", "container_id": "331684f241b63898a81eb3cd8537c17e0d5abf0066772d5a38fcedeb31463452"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "stop_container", "container_id": "9a2c0323e4686bc4b144e970ed8d6f9e20d523c21760c70e69a592ab52fffa52"}
-{"event": "stop_container", "container_id": "bd19fc9ed6ed6ebe798bd28420c3062c09f2bea5c8743d38329f715ff3a95418"}
-{"event": "stop_container", "container_id": "4dd366a29ef4e0d90267b28bf011711626808df1d72dc9dbd23081c324c1aea1"}
-{"event": "stop_container", "container_id": "319de917358a520f202171c344b5a2d340f667ae20994395ae0b1d55fc553a17"}
-{"event": "delete_container", "container_id": "9a2c0323e4686bc4b144e970ed8d6f9e20d523c21760c70e69a592ab52fffa52"}
-{"event": "delete_container", "container_id": "bd19fc9ed6ed6ebe798bd28420c3062c09f2bea5c8743d38329f715ff3a95418"}
-{"event": "delete_container", "container_id": "4dd366a29ef4e0d90267b28bf011711626808df1d72dc9dbd23081c324c1aea1"}
-{"event": "delete_container", "container_id": "319de917358a520f202171c344b5a2d340f667ae20994395ae0b1d55fc553a17"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "stop_container", "container_id": "1c59e8a32371871b5df9b0804e8a7f4b97db1575602d707078af557ac34d197a"}
-{"event": "stop_container", "container_id": "2f339b43fac1139331d5c4fc84e27a32611fea2fa085c21c22e65bc6020fa9e8"}
-{"event": "stop_container", "container_id": "af7f201b5d21994df23dd46a6fd5e95a0fdad376bbf8e596d5e83c2addafb9fa"}
-{"event": "stop_container", "container_id": "aa27617ac33acda97ecdc392e030e9e0cdaf7702cf00f71fb43aa5e6e5feb4f1"}
-{"event": "delete_container", "container_id": "1c59e8a32371871b5df9b0804e8a7f4b97db1575602d707078af557ac34d197a"}
-{"event": "delete_container", "container_id": "2f339b43fac1139331d5c4fc84e27a32611fea2fa085c21c22e65bc6020fa9e8"}
-{"event": "delete_container", "container_id": "af7f201b5d21994df23dd46a6fd5e95a0fdad376bbf8e596d5e83c2addafb9fa"}
-{"event": "delete_container", "container_id": "aa27617ac33acda97ecdc392e030e9e0cdaf7702cf00f71fb43aa5e6e5feb4f1"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "stop_container", "container_id": "404bd15b60be2be4e5ea3caa6448da7cfe174ec33ff701d7185afcc3c2b995b9"}
-{"event": "stop_container", "container_id": "e619045d2bf927287e0f8046462c7f72fc874eaf15d268346deed1535424834f"}
-{"event": "stop_container", "container_id": "30abee43b43e78938b112b0a9d7c5c601356e0762d099ae0d1f0bb92538abee0"}
-{"event": "stop_container", "container_id": "4b93f97f7254f520867995db6f23f65a36cbd5ae2a2608a04b700e9dd3be2048"}
-{"event": "delete_container", "container_id": "404bd15b60be2be4e5ea3caa6448da7cfe174ec33ff701d7185afcc3c2b995b9"}
-{"event": "delete_container", "container_id": "e619045d2bf927287e0f8046462c7f72fc874eaf15d268346deed1535424834f"}
-{"event": "delete_container", "container_id": "30abee43b43e78938b112b0a9d7c5c601356e0762d099ae0d1f0bb92538abee0"}
-{"event": "delete_container", "container_id": "4b93f97f7254f520867995db6f23f65a36cbd5ae2a2608a04b700e9dd3be2048"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "stop_container", "container_id": "1f1cbc306d84715a4385e233f5011d32ab35121192cf13a50282c4d116ae7142"}
-{"event": "stop_container", "container_id": "37fc7cc0bbfdbf715c7a602d53efdf259726829d63631acaa3cd4f0bd393710e"}
-{"event": "stop_container", "container_id": "0a859632d3b92ee88bb8ae27f86747485050ef58719bd3601989f09146f03883"}
-{"event": "stop_container", "container_id": "1573ac70022655d48d5d870b36d4327445e4ff524ca0b5c684dc160a2e17c2ee"}
-{"event": "delete_container", "container_id": "1f1cbc306d84715a4385e233f5011d32ab35121192cf13a50282c4d116ae7142"}
-{"event": "delete_container", "container_id": "37fc7cc0bbfdbf715c7a602d53efdf259726829d63631acaa3cd4f0bd393710e"}
-{"event": "delete_container", "container_id": "0a859632d3b92ee88bb8ae27f86747485050ef58719bd3601989f09146f03883"}
-{"event": "delete_container", "container_id": "1573ac70022655d48d5d870b36d4327445e4ff524ca0b5c684dc160a2e17c2ee"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "stop_container", "container_id": "aedc149e0c91cf2318b97b610a1b722feab89a31d54f8bb659baab26078e9683"}
-{"event": "stop_container", "container_id": "3ebaab8b81706681bda6099dd3a5a511fe4ac115477ee6a26dccfcc082a6eea5"}
-{"event": "stop_container", "container_id": "9573c33bdfef245b8446373aa98d4c1f7bb0bc5a044d353d3f8d85d813a86c30"}
-{"event": "stop_container", "container_id": "4de29b8db89bcd2254075645f080ad714dba6598df4120f828b3ee7052f2c886"}
-{"event": "delete_container", "container_id": "aedc149e0c91cf2318b97b610a1b722feab89a31d54f8bb659baab26078e9683"}
-{"event": "delete_container", "container_id": "3ebaab8b81706681bda6099dd3a5a511fe4ac115477ee6a26dccfcc082a6eea5"}
-{"event": "delete_container", "container_id": "9573c33bdfef245b8446373aa98d4c1f7bb0bc5a044d353d3f8d85d813a86c30"}
-{"event": "delete_container", "container_id": "4de29b8db89bcd2254075645f080ad714dba6598df4120f828b3ee7052f2c886"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "stop_container", "container_id": "3a4e17f40a596fa0953817803c16cb35379bf4fa18b684fe6958631d487b398c"}
-{"event": "stop_container", "container_id": "04f989986215fb0630b5b4e16bfe63d512d55c33d25786fa4e99423a569a345f"}
-{"event": "stop_container", "container_id": "3bbb69757c04ef03e97cf53658cdd9e06348b15f33eb0bbdddcb8e63454d2984"}
-{"event": "stop_container", "container_id": "ae355f8c3e82e245c84ccf1ee84e393c9e21ae84982a5b1fe9dc6250dbfc61c1"}
-{"event": "delete_container", "container_id": "3a4e17f40a596fa0953817803c16cb35379bf4fa18b684fe6958631d487b398c"}
-{"event": "delete_container", "container_id": "04f989986215fb0630b5b4e16bfe63d512d55c33d25786fa4e99423a569a345f"}
-{"event": "delete_container", "container_id": "3bbb69757c04ef03e97cf53658cdd9e06348b15f33eb0bbdddcb8e63454d2984"}
-{"event": "delete_container", "container_id": "ae355f8c3e82e245c84ccf1ee84e393c9e21ae84982a5b1fe9dc6250dbfc61c1"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "stop_container", "container_id": "d02ed19a5d6d73c22da009204901767423161b7c268f62caea68398082df9b8c"}
-{"event": "stop_container", "container_id": "f565e3bb30f2e4a0815b095f98dec66796d48dd7429fba3e680719b0bca7e28c"}
-{"event": "stop_container", "container_id": "9f9b446a5dddc3e4785cd1066e4f25ec4473dbc14538202d14e4ccefab7eb539"}
-{"event": "stop_container", "container_id": "d62d4eb63b7d925945d6085f68ffac7c690cf5adc939a4ea221fbcfe40a0d3da"}
-{"event": "delete_container", "container_id": "d02ed19a5d6d73c22da009204901767423161b7c268f62caea68398082df9b8c"}
-{"event": "delete_container", "container_id": "f565e3bb30f2e4a0815b095f98dec66796d48dd7429fba3e680719b0bca7e28c"}
-{"event": "delete_container", "container_id": "9f9b446a5dddc3e4785cd1066e4f25ec4473dbc14538202d14e4ccefab7eb539"}
-{"event": "delete_container", "container_id": "d62d4eb63b7d925945d6085f68ffac7c690cf5adc939a4ea221fbcfe40a0d3da"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "stop_container", "container_id": "8bd36e11c999ea140fa261ec1af4e5fa043f4e3074c5a46e1960060175f27059"}
-{"event": "stop_container", "container_id": "e8a2d73cb4a121676b6700092f90f5c6c4e36b908774e59ce15179e8d5c0f332"}
-{"event": "stop_container", "container_id": "e0bcb2dc4ae0932814ce1eba35700d7cb97c142f3457c8ed15683283ac727a86"}
-{"event": "stop_container", "container_id": "9b582c3fdb3ea293fa7b9936d98dd7718ceb5a60adb7d262b86e1baa25bf792e"}
-{"event": "delete_container", "container_id": "8bd36e11c999ea140fa261ec1af4e5fa043f4e3074c5a46e1960060175f27059"}
-{"event": "delete_container", "container_id": "e8a2d73cb4a121676b6700092f90f5c6c4e36b908774e59ce15179e8d5c0f332"}
-{"event": "delete_container", "container_id": "e0bcb2dc4ae0932814ce1eba35700d7cb97c142f3457c8ed15683283ac727a86"}
-{"event": "delete_container", "container_id": "9b582c3fdb3ea293fa7b9936d98dd7718ceb5a60adb7d262b86e1baa25bf792e"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "stop_container", "container_id": "9beb67106411161c782ccb2bfe490ce1ae42de21cd4a10655557e16d8c2186a5"}
-{"event": "stop_container", "container_id": "94eb9684e2cd160a63eae44e53c2892dde8988c4f18e6103174332774948594e"}
-{"event": "stop_container", "container_id": "950239237e75cfd387d81ccf8ef22a0cddc35dfba0e90aa2d1cfb9c2a4d85854"}
-{"event": "stop_container", "container_id": "e6e4f3ff2b84ef8987f672f2aea0798bcd84f305543b76e40c66b37f060a1042"}
-{"event": "delete_container", "container_id": "9beb67106411161c782ccb2bfe490ce1ae42de21cd4a10655557e16d8c2186a5"}
-{"event": "delete_container", "container_id": "94eb9684e2cd160a63eae44e53c2892dde8988c4f18e6103174332774948594e"}
-{"event": "delete_container", "container_id": "950239237e75cfd387d81ccf8ef22a0cddc35dfba0e90aa2d1cfb9c2a4d85854"}
-{"event": "delete_container", "container_id": "e6e4f3ff2b84ef8987f672f2aea0798bcd84f305543b76e40c66b37f060a1042"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "stop_container", "container_id": "c2349fdd728035298f20a7e9ed60762e22d27d331e4204ac0f74daf22a69fd5f"}
-{"event": "stop_container", "container_id": "ebee0ab432a356b3eff62657b0fd7f2a3f87e282f500ce5e11173852b7054862"}
-{"event": "stop_container", "container_id": "8feaae4f172d34d3875dd946454aad8562f9f7eb33e372a36e1ae56de4273f26"}
-{"event": "stop_container", "container_id": "5bf543296c37abc072e702515bd28a54a720c9ad7f717b1224fb5d576848f0ac"}
-{"event": "delete_container", "container_id": "c2349fdd728035298f20a7e9ed60762e22d27d331e4204ac0f74daf22a69fd5f"}
-{"event": "delete_container", "container_id": "ebee0ab432a356b3eff62657b0fd7f2a3f87e282f500ce5e11173852b7054862"}
-{"event": "delete_container", "container_id": "8feaae4f172d34d3875dd946454aad8562f9f7eb33e372a36e1ae56de4273f26"}
-{"event": "delete_container", "container_id": "5bf543296c37abc072e702515bd28a54a720c9ad7f717b1224fb5d576848f0ac"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "stop_container", "container_id": "99c1a73fbd67e7e5dbd2a804ad5e6591e3684ab1609ee650fe338ba16a1a07a0"}
-{"event": "stop_container", "container_id": "7aca647fedf84558cd23a6d23febd71876942b51ece1b1fceeed6fb73940c36c"}
-{"event": "stop_container", "container_id": "03d54e5d354de497a2f1ae069ed0fd493af329078c9dccbdebd00ebefa687076"}
-{"event": "stop_container", "container_id": "876ec327c97e62e0644de23eeeaa3ddacc4d5d290af0a69c50ef0ad893a3223f"}
-{"event": "delete_container", "container_id": "99c1a73fbd67e7e5dbd2a804ad5e6591e3684ab1609ee650fe338ba16a1a07a0"}
-{"event": "delete_container", "container_id": "7aca647fedf84558cd23a6d23febd71876942b51ece1b1fceeed6fb73940c36c"}
-{"event": "delete_container", "container_id": "03d54e5d354de497a2f1ae069ed0fd493af329078c9dccbdebd00ebefa687076"}
-{"event": "delete_container", "container_id": "876ec327c97e62e0644de23eeeaa3ddacc4d5d290af0a69c50ef0ad893a3223f"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
-{"event": "stop_container", "container_id": "005ca54b7974d969f01134ca634221057a6245c0fe98cc46da3d34b48f584071"}
-{"event": "stop_container", "container_id": "b7635893cfa90b40d1967566d615cb9d9fd83e3776b621be15857ea3c8c94853"}
-{"event": "stop_container", "container_id": "3add58b35298ffb0d3a5aa60d5b55ea240baa0715d19c7feac11c5524815a171"}
-{"event": "stop_container", "container_id": "8e454056a05092efd98135536f7934098df33e0869b2cb70dc6b9bfcc387e8ec"}
-{"event": "delete_container", "container_id": "005ca54b7974d969f01134ca634221057a6245c0fe98cc46da3d34b48f584071"}
-{"event": "delete_container", "container_id": "b7635893cfa90b40d1967566d615cb9d9fd83e3776b621be15857ea3c8c94853"}
-{"event": "delete_container", "container_id": "3add58b35298ffb0d3a5aa60d5b55ea240baa0715d19c7feac11c5524815a171"}
-{"event": "delete_container", "container_id": "8e454056a05092efd98135536f7934098df33e0869b2cb70dc6b9bfcc387e8ec"}
-{"event": "init_cluster_manager", "cluster_name": "ass2"}
+2024-02-14 11:59:31,605 - INFO - {"event": "init_cluster_manager", "cluster_name": "ass2"}
+2024-02-14 11:59:32,027 - INFO - {"event": "create_container", "container_id": "51f42f5dfa156ad26ff6f13a0c6137896338455885cc2001f5e10c25955d1034", "hostname": "ass2-container1"}
+2024-02-14 11:59:32,446 - INFO - {"event": "create_container", "container_id": "9cd8ce1fd79f8f4e61b3fae2043009f19085d1d5a55165698f693ba4e2c686aa", "hostname": "ass2-container2"}
+2024-02-14 11:59:32,863 - INFO - {"event": "create_container", "container_id": "93045c67dc2d6b3924d59a1201b552f52a99c7af8d2957f4b22c130cad07d6c6", "hostname": "ass2-container3"}
+2024-02-14 11:59:33,234 - INFO - {"event": "create_container", "container_id": "12235f26a596fd4958318c5f795e3e3a83870cf07dbe6677f3cbb961fc31beb6", "hostname": "ass2-container4"}
+2024-02-14 11:59:33,890 - INFO - {"event": "run_command_in_container", "container_id": "51f42f5dfa156ad26ff6f13a0c6137896338455885cc2001f5e10c25955d1034", "command": "python ass2_volume/ass2_process_data.py ass2_volume/ass2_data.pkl 0 25000", "output": "Mean: 50156531.75669205\nVariance: 835738953857654.6\nMax: 99984026.07240392\nMin: 738.7842122620387\n"}
+2024-02-14 11:59:33,893 - INFO - {"event": "run_command_in_container", "container_id": "93045c67dc2d6b3924d59a1201b552f52a99c7af8d2957f4b22c130cad07d6c6", "command": "python ass2_volume/ass2_process_data.py ass2_volume/ass2_data.pkl 50000 75000", "output": "Mean: 49817348.509924404\nVariance: 837975957786750.8\nMax: 99992662.8656611\nMin: 2267.0718391176883\n"}
+2024-02-14 11:59:33,896 - INFO - {"event": "run_command_in_container", "container_id": "9cd8ce1fd79f8f4e61b3fae2043009f19085d1d5a55165698f693ba4e2c686aa", "command": "python ass2_volume/ass2_process_data.py ass2_volume/ass2_data.pkl 25000 50000", "output": "Mean: 49875927.556482255\nVariance: 841380215987210.0\nMax: 99996232.65892127\nMin: 673.4403050863926\n"}
+2024-02-14 11:59:33,896 - INFO - {"event": "run_command_in_container", "container_id": "12235f26a596fd4958318c5f795e3e3a83870cf07dbe6677f3cbb961fc31beb6", "command": "python ass2_volume/ass2_process_data.py ass2_volume/ass2_data.pkl 75000 100000", "output": "Mean: 50001848.422018975\nVariance: 829609868935616.8\nMax: 99999349.28904241\nMin: 5725.086545457764\n"}
+2024-02-14 11:59:44,320 - INFO - {"event": "stop_container", "container_id": "51f42f5dfa156ad26ff6f13a0c6137896338455885cc2001f5e10c25955d1034"}
+2024-02-14 11:59:54,714 - INFO - {"event": "stop_container", "container_id": "9cd8ce1fd79f8f4e61b3fae2043009f19085d1d5a55165698f693ba4e2c686aa"}
+2024-02-14 12:00:05,112 - INFO - {"event": "stop_container", "container_id": "93045c67dc2d6b3924d59a1201b552f52a99c7af8d2957f4b22c130cad07d6c6"}
+2024-02-14 12:00:15,480 - INFO - {"event": "stop_container", "container_id": "12235f26a596fd4958318c5f795e3e3a83870cf07dbe6677f3cbb961fc31beb6"}
+2024-02-14 12:00:15,504 - INFO - {"event": "delete_container", "container_id": "51f42f5dfa156ad26ff6f13a0c6137896338455885cc2001f5e10c25955d1034"}
+2024-02-14 12:00:15,527 - INFO - {"event": "delete_container", "container_id": "9cd8ce1fd79f8f4e61b3fae2043009f19085d1d5a55165698f693ba4e2c686aa"}
+2024-02-14 12:00:15,554 - INFO - {"event": "delete_container", "container_id": "93045c67dc2d6b3924d59a1201b552f52a99c7af8d2957f4b22c130cad07d6c6"}
+2024-02-14 12:00:15,581 - INFO - {"event": "delete_container", "container_id": "12235f26a596fd4958318c5f795e3e3a83870cf07dbe6677f3cbb961fc31beb6"}
+2024-02-14 12:09:47,381 - INFO - {"event": "init_cluster_manager", "cluster_name": "ass2"}
+2024-02-14 12:09:47,892 - INFO - {"event": "create_container", "container_id": "2c35e7b9df1b4cc7b7956e4e2ec15ee7d7cad83268524f0b2abe9b79b737ccc1", "hostname": "ass2-container1"}
+2024-02-14 12:09:48,577 - INFO - {"event": "create_container", "container_id": "c562676e8249748321806e351715567994572c4eb7f7209210d2eab078c1df3e", "hostname": "ass2-container2"}
+2024-02-14 12:09:48,944 - INFO - {"event": "create_container", "container_id": "993b983468693d285388218a8805a216d611a131390fb67d9888694ff40d6eb9", "hostname": "ass2-container3"}
+2024-02-14 12:09:49,393 - INFO - {"event": "create_container", "container_id": "198ecb0d94405ed6d73a4b59ae92d40ba3a22eb7a92f4228ff6ba21f9b5326f7", "hostname": "ass2-container4"}
+2024-02-14 12:09:49,978 - INFO - {"event": "run_command_in_container", "container_id": "c562676e8249748321806e351715567994572c4eb7f7209210d2eab078c1df3e", "command": "python ass2_volume/ass2_process_data.py ass2_volume/ass2_data.pkl 25000 50000", "exit_code": 0, "output": "Mean: 49875927.556482255\nVariance: 841380215987210.0\nMax: 99996232.65892127\nMin: 673.4403050863926\n"}
+2024-02-14 12:09:50,003 - INFO - {"event": "run_command_in_container", "container_id": "2c35e7b9df1b4cc7b7956e4e2ec15ee7d7cad83268524f0b2abe9b79b737ccc1", "command": "python ass2_volume/ass2_process_data.py ass2_volume/ass2_data.pkl 0 25000", "exit_code": 0, "output": "Mean: 50156531.75669205\nVariance: 835738953857654.6\nMax: 99984026.07240392\nMin: 738.7842122620387\n"}
+2024-02-14 12:09:50,009 - INFO - {"event": "run_command_in_container", "container_id": "198ecb0d94405ed6d73a4b59ae92d40ba3a22eb7a92f4228ff6ba21f9b5326f7", "command": "python ass2_volume/ass2_process_data.py ass2_volume/ass2_data.pkl 75000 100000", "exit_code": 0, "output": "Mean: 50001848.422018975\nVariance: 829609868935616.8\nMax: 99999349.28904241\nMin: 5725.086545457764\n"}
+2024-02-14 12:09:50,013 - INFO - {"event": "run_command_in_container", "container_id": "993b983468693d285388218a8805a216d611a131390fb67d9888694ff40d6eb9", "command": "python ass2_volume/ass2_process_data.py ass2_volume/ass2_data.pkl 50000 75000", "exit_code": 0, "output": "Mean: 49817348.509924404\nVariance: 837975957786750.8\nMax: 99992662.8656611\nMin: 2267.0718391176883\n"}
+2024-02-14 12:10:00,375 - INFO - {"event": "stop_container", "container_id": "2c35e7b9df1b4cc7b7956e4e2ec15ee7d7cad83268524f0b2abe9b79b737ccc1"}
+2024-02-14 12:10:10,808 - INFO - {"event": "stop_container", "container_id": "c562676e8249748321806e351715567994572c4eb7f7209210d2eab078c1df3e"}
+2024-02-14 12:10:21,180 - INFO - {"event": "stop_container", "container_id": "993b983468693d285388218a8805a216d611a131390fb67d9888694ff40d6eb9"}
+2024-02-14 12:10:31,565 - INFO - {"event": "stop_container", "container_id": "198ecb0d94405ed6d73a4b59ae92d40ba3a22eb7a92f4228ff6ba21f9b5326f7"}
+2024-02-14 12:10:31,590 - INFO - {"event": "delete_container", "container_id": "2c35e7b9df1b4cc7b7956e4e2ec15ee7d7cad83268524f0b2abe9b79b737ccc1"}
+2024-02-14 12:10:31,613 - INFO - {"event": "delete_container", "container_id": "c562676e8249748321806e351715567994572c4eb7f7209210d2eab078c1df3e"}
+2024-02-14 12:10:31,637 - INFO - {"event": "delete_container", "container_id": "993b983468693d285388218a8805a216d611a131390fb67d9888694ff40d6eb9"}
+2024-02-14 12:10:31,664 - INFO - {"event": "delete_container", "container_id": "198ecb0d94405ed6d73a4b59ae92d40ba3a22eb7a92f4228ff6ba21f9b5326f7"}
