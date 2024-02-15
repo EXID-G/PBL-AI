@@ -183,6 +183,7 @@ class ClusterManager:
             for container in self.containers:
                 self._delete_container(container["id"])
 
+
             print("All containers deleted successfully.")
             self.containers = []
         except docker.errors.APIError as e:
