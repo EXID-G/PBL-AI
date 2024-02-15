@@ -191,9 +191,8 @@ class ClusterManager:
 
     def _delete_container(self, container_id):
         container = self.client.containers.get(container_id)
-        tmp_id = container.id
         container.remove()
-        self.containers = [container for container in self.containers if container["id"] != tmp_id]
+        self.containers = [container for container in self.containers if container["id"] != container.id]
         print(f"Container (id = {container_id}) deleted successfully.")
         log_data = {"event": "delete_container", "container_id": container_id}
         logging.info(json.dumps(log_data))
