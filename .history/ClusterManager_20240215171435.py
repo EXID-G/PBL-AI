@@ -79,7 +79,7 @@ class ClusterManager:
 
     def list_stopped_containers(self):
         try:
-            stopped_containers = self.client.containers.list(all=True, filters={'status': 'exited'})
+            stopped_containers = self.client.containers.list(all=True, filters={'status': 'exiteed'})
             print(f"\nThere are {len(stopped_containers)} stopped containers in the cluster.")
             for container in stopped_containers:
                 self._container_info(container.id)
@@ -185,10 +185,10 @@ class ClusterManager:
 
 
             print("All containers deleted successfully.")
-            self.containers = []
         except docker.errors.APIError as e:
             print(f"Error deleting containers: {e}")
 
+        self.containers = []
 
     def _delete_container(self, container_id):
         container = self.client.containers.get(container_id)

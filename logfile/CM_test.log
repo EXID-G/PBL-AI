@@ -1,0 +1,35 @@
+2024-02-15 17:11:03,829 - INFO - {"event": "init_cluster_manager", "cluster_name": "test"}
+2024-02-15 17:11:08,242 - INFO - {"event": "create_container", "container_id": "76f532788c1ceddd85277fc3ba8f27c5ec9e4092d9b17d7043d8c5b27d092de9", "hostname": "test-container1"}
+2024-02-15 17:11:08,620 - INFO - {"event": "create_container", "container_id": "2a78e01d94ee81e6f81ea6791f95aa60c2dc409fe4e33ba7336ea3e6fc2857ba", "hostname": "test-container2"}
+2024-02-15 17:11:09,023 - INFO - {"event": "create_container", "container_id": "ebba2f92c36aa39ff0990a0c7964aa8f9a9cc983f1252c6b5a098f05fa356f7e", "hostname": "test-container3"}
+2024-02-15 17:11:09,397 - INFO - {"event": "create_container", "container_id": "14a62c0cc71a51bed8c068dd54c050eb398dc97139581632867e64a4dbea228d", "hostname": "test-container4"}
+2024-02-15 17:11:09,751 - INFO - {"event": "create_container", "container_id": "b316f648314581186f44a038d424a62d0c6efd5805165d3bc3472699468c1e14", "hostname": "test-container5"}
+2024-02-15 17:11:10,109 - INFO - {"event": "create_container", "container_id": "47a6e4af92d494a4bd49521398b27b6396070ae0982d5c9370b3ae4417a43c07", "hostname": "test-container6"}
+2024-02-15 17:11:45,324 - INFO - {"event": "stop_container", "container_id": "76f532788c1ceddd85277fc3ba8f27c5ec9e4092d9b17d7043d8c5b27d092de9"}
+2024-02-15 17:13:57,920 - INFO - {"event": "stop_container", "container_id": "76f532788c1ceddd85277fc3ba8f27c5ec9e4092d9b17d7043d8c5b27d092de9"}
+2024-02-15 17:14:08,282 - INFO - {"event": "stop_container", "container_id": "2a78e01d94ee81e6f81ea6791f95aa60c2dc409fe4e33ba7336ea3e6fc2857ba"}
+2024-02-15 17:14:18,704 - INFO - {"event": "stop_container", "container_id": "ebba2f92c36aa39ff0990a0c7964aa8f9a9cc983f1252c6b5a098f05fa356f7e"}
+2024-02-15 17:14:29,125 - INFO - {"event": "stop_container", "container_id": "14a62c0cc71a51bed8c068dd54c050eb398dc97139581632867e64a4dbea228d"}
+2024-02-15 17:14:39,512 - INFO - {"event": "stop_container", "container_id": "b316f648314581186f44a038d424a62d0c6efd5805165d3bc3472699468c1e14"}
+2024-02-15 17:14:49,881 - INFO - {"event": "stop_container", "container_id": "47a6e4af92d494a4bd49521398b27b6396070ae0982d5c9370b3ae4417a43c07"}
+2024-02-15 17:14:49,906 - INFO - {"event": "delete_container", "container_id": "76f532788c1ceddd85277fc3ba8f27c5ec9e4092d9b17d7043d8c5b27d092de9"}
+2024-02-15 17:14:49,931 - INFO - {"event": "delete_container", "container_id": "2a78e01d94ee81e6f81ea6791f95aa60c2dc409fe4e33ba7336ea3e6fc2857ba"}
+2024-02-15 17:14:49,956 - INFO - {"event": "delete_container", "container_id": "ebba2f92c36aa39ff0990a0c7964aa8f9a9cc983f1252c6b5a098f05fa356f7e"}
+2024-02-15 17:14:49,980 - INFO - {"event": "delete_container", "container_id": "14a62c0cc71a51bed8c068dd54c050eb398dc97139581632867e64a4dbea228d"}
+2024-02-15 17:14:50,006 - INFO - {"event": "delete_container", "container_id": "b316f648314581186f44a038d424a62d0c6efd5805165d3bc3472699468c1e14"}
+2024-02-15 17:14:50,031 - INFO - {"event": "delete_container", "container_id": "47a6e4af92d494a4bd49521398b27b6396070ae0982d5c9370b3ae4417a43c07"}
+2024-02-15 17:15:35,951 - INFO - {"event": "init_cluster_manager", "cluster_name": "test"}
+2024-02-15 17:15:40,250 - INFO - {"event": "create_container", "container_id": "02886eb88b12c3933f7477abcb4cfbfc2a5a7ff56661007fb221cbd95e14eb0c", "hostname": "test-container1"}
+2024-02-15 17:15:40,597 - INFO - {"event": "create_container", "container_id": "6ca83942be0885a29bea463b03d928ff54e060fa5e1e1acf840a3cf2de5bca30", "hostname": "test-container2"}
+2024-02-15 17:15:40,981 - INFO - {"event": "create_container", "container_id": "c25c547ec5d564052e18ee21baae8daa12e83fdb92fb7dde8b6c64775272784b", "hostname": "test-container3"}
+2024-02-15 17:23:07,398 - INFO - {"event": "init_cluster_manager", "cluster_name": "test"}
+2024-02-15 17:23:14,372 - INFO - {"event": "create_container", "container_id": "14e8ae34bf7a70ab130b0b6a563145f3bbb4b3102536124dd4c5a08e8cb56cc8", "hostname": "test-container1"}
+2024-02-15 17:23:14,745 - INFO - {"event": "create_container", "container_id": "8e77af27f19ed07f6dfc7d18e8f0b4d44cc9238c1762619175ac43e3b0a89699", "hostname": "test-container2"}
+2024-02-15 17:23:15,086 - INFO - {"event": "create_container", "container_id": "d4b2b069f87e3f78dc77b978e380cb7d9833bc7f5f3dd3b7eff32fc76fa5d2ca", "hostname": "test-container3"}
+2024-02-15 17:23:37,367 - INFO - {"event": "stop_container", "container_id": "d4b2b069f87e3f78dc77b978e380cb7d9833bc7f5f3dd3b7eff32fc76fa5d2ca"}
+2024-02-15 17:27:22,700 - INFO - {"event": "stop_container", "container_id": "14e8ae34bf7a70ab130b0b6a563145f3bbb4b3102536124dd4c5a08e8cb56cc8"}
+2024-02-15 17:27:33,061 - INFO - {"event": "stop_container", "container_id": "8e77af27f19ed07f6dfc7d18e8f0b4d44cc9238c1762619175ac43e3b0a89699"}
+2024-02-15 17:27:33,073 - INFO - {"event": "stop_container", "container_id": "d4b2b069f87e3f78dc77b978e380cb7d9833bc7f5f3dd3b7eff32fc76fa5d2ca"}
+2024-02-15 17:27:33,094 - INFO - {"event": "delete_container", "container_id": "14e8ae34bf7a70ab130b0b6a563145f3bbb4b3102536124dd4c5a08e8cb56cc8"}
+2024-02-15 17:27:33,116 - INFO - {"event": "delete_container", "container_id": "8e77af27f19ed07f6dfc7d18e8f0b4d44cc9238c1762619175ac43e3b0a89699"}
+2024-02-15 17:27:33,139 - INFO - {"event": "delete_container", "container_id": "d4b2b069f87e3f78dc77b978e380cb7d9833bc7f5f3dd3b7eff32fc76fa5d2ca"}
